@@ -81,6 +81,19 @@ for i in range(0,n):
             print(" ",end=" ")
     print("\n")
 
+# rectangle using continuous numbers
+n = int(input())
+m = int(input())
+count=0
+for i in range(0,n):
+    for j in range(0,m):
+        if i==0 or j==n-1 or j==0 or i==n-1:
+            print(count,end=" ")
+            count+=1
+        else:
+            print(" ",end=" ")
+    print("\n")
+
 # Z formation using *
 n=int(input())
 m=int(input())
@@ -88,6 +101,19 @@ for i in range(0,n):
     for j in range(0,m):
         if i==0 or i==n-1 or i+j==n-1:
             print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print("\n")
+
+# Z formation using continuous numbers
+n=int(input())
+m=int(input())
+count=0
+for i in range(0,n):
+    for j in range(0,m):
+        if i==0 or i==n-1 or i+j==n-1:
+            print(count,end=" ")
+            count+=1
         else:
             print(" ",end=" ")
     print("\n")

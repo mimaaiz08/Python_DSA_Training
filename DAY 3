@@ -30,7 +30,6 @@ for i in range(0,n):
 # triangle with incrementing numbers 
 n = int(input())
 count=1
-# m = int(input())
 for i in range(0,n):
     for j in range(0,n):
         if i>=j:
@@ -43,7 +42,6 @@ for i in range(0,n):
 # triangle with incrementing numbers for each row starting with 1 
 n = int(input())
 count=1
-# m = int(input())
 for i in range(0,n):
     for j in range(0,n):
         if i>=j:
@@ -52,4 +50,22 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     count=1
+    print("\n")
+
+# upper & lower triangle with incrementing numbers 
+n = int(input())
+count=1
+for i in range(0,n):
+    for j in range(0,n):
+        if i>=j :
+            print(count,end=" ")
+            count+=1
+        else:
+            print(" ",end=" ")
+    print("\n")
+for i in range(0,n-1):
+    for j in range(0,n-1):
+        if i<=j:
+            print(count,end=" ")
+            count+=1
     print("\n")

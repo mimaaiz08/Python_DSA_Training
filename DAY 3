@@ -1,1 +1,8 @@
-
+#pattern problem 
+# nxm matrix
+n = int(input())
+m = int(input())
+for i in range(0,n):
+    for i in range(0,m):
+        print("*",end=" ")
+    print("\n")

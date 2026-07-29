@@ -26,3 +26,16 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+
+# triangle with numbers 
+n = int(input())
+count=1
+# m = int(input())
+for i in range(0,n):
+    for j in range(0,n):
+        if i>=j:
+            print(count,end=" ")
+            count+=1
+        else:
+            print(" ",end=" ")
+    print("\n")

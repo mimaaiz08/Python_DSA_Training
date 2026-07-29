@@ -1,4 +1,4 @@
-#pattern problem 
+#pattern problem using * symbol
 # nxm matrix
 n = int(input())
 m = int(input())

@@ -1,4 +1,4 @@
-# Stack concepts append() & pop()
+# Stack using list concepts append() & pop()
 def create_stack():
     stack=[]
     return stack
@@ -25,3 +25,44 @@ push(stack, str(4))
 print(stack)
 print("Poped item: ", pop(stack))
 print("Stack after popping an element:",stack)
+
+# Stack using LinkedList
+class Node:
+    def __init__(self,d):
+        self.data=d
+        self.next=None
+class stack:
+    def __init__(self):
+        self.top=None
+    def push(self, d):
+        newnode=Node(d)
+        if self.top==None:
+            self.top=newnode
+        else:
+            newnode.next=self.top
+            self.top=newnode
+    def pop(self):
+        if self.top==None:
+            return "Stack is Empty"
+        else:
+            self.top=self.top.next
+    def peek(self):
+        if self.top==None:
+            return "Stack is Empty"
+        else:
+            print(self.top.data)
+    def print(self):
+        cur=self.top
+        while cur:
+            print(cur.data,end="->")
+            cur=cur.next
+Stack=stack()
+Stack.push(1)
+Stack.push(2)
+Stack.push(3)
+Stack.push(4)
+Stack.print()
+print("\n")
+Stack.peek()
+Stack.pop()
+Stack.print()

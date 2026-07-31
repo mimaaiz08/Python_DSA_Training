@@ -120,3 +120,5 @@ queue.peek()
 queue.dequeue()
 print("Aftre removing an element from the queue: ")
 queue.printQueue()
+
+# Solved Leetcode problem 20

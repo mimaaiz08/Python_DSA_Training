@@ -7,7 +7,7 @@ class Node:
         self.next=None
 ```
 
-# Defining LinkedList
+// Defining LinkedList
 ```python
 class LinkedList:
     def __init__(self):

@@ -139,4 +139,4 @@ print(arr)
 ```
 [3, 9, 10, 27, 38, 43, 82]
 
-# Solved leetcode problem 20
+# Solved leetcode problem 20, 179, 918

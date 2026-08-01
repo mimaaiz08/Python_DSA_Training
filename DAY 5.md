@@ -1,4 +1,5 @@
 # Stack using list concepts append() & pop()
+```python
 def create_stack():
     stack=[]
     return stack
@@ -25,8 +26,10 @@ push(stack, str(4))
 print(stack)
 print("Poped item: ", pop(stack))
 print("Stack after popping an element:",stack)
+```
 
 # Stack using LinkedList
+```python
 class Node:
     def __init__(self,d):
         self.data=d
@@ -66,8 +69,10 @@ print("\n")
 Stack.peek()
 Stack.pop()
 Stack.print()
+```
 
 # Queue using list having dequeue and enqueue
+```python
 class Queue():
     def __init__(self,k):
         self.k=k
@@ -120,5 +125,5 @@ queue.peek()
 queue.dequeue()
 print("Aftre removing an element from the queue: ")
 queue.printQueue()
-
+```
 # Solved Leetcode problem 20

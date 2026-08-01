@@ -137,5 +137,6 @@ arr=[38, 27, 43, 3, 9, 82, 10]
 merge_sort(arr)
 print(arr)
 ```
+[3, 9, 10, 27, 38, 43, 82]
 
 # Solved leetcode problem 20

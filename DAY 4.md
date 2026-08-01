@@ -1,14 +1,11 @@
 # Linked List
-# Defining Node
+
 ```python
 class Node:
     def __init__(self,d):
         self.d = d
         self.next=None
-```
 
-// Defining LinkedList
-```python
 class LinkedList:
     def __init__(self):
         self.head=None

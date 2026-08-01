@@ -1,6 +1,6 @@
 # pattern problem using * symbol
 # nxm matrix
-''' python
+'''python
 n = int(input())
 m = int(input())
 for i in range(0,n):

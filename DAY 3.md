@@ -1,5 +1,5 @@
-# pattern problem using * symbol
-## nxm matrix
+# Pattern problem using * symbol
+# nxm matrix
 ```python
 n = int(input())
 m = int(input())
@@ -33,7 +33,8 @@ for i in range(0,n):
     print("\n")
 ```
 
-# triangle with incrementing numbers 
+# triangle with incrementing numbers
+```python
 n = int(input())
 count=1
 for i in range(0,n):
@@ -44,8 +45,10 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+```
 
 # triangle with incrementing numbers for each row starting with 1 
+```python
 n = int(input())
 count=1
 for i in range(0,n):
@@ -57,8 +60,10 @@ for i in range(0,n):
             print(" ",end=" ")
     count=1
     print("\n")
+```
 
 # upper & lower triangle with incrementing numbers 
+```python
 n = int(input())
 count=1
 for i in range(0,n):
@@ -75,8 +80,10 @@ for i in range(0,n-1):
             print(count,end=" ")
             count+=1
     print("\n")
+```
 
 # rectangle
+```python
 n = int(input())
 m = int(input())
 for i in range(0,n):
@@ -86,8 +93,10 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+```
 
 # rectangle using continuous numbers
+```python
 n = int(input())
 m = int(input())
 count=0
@@ -99,8 +108,10 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+```
 
 # Z formation using *
+```python
 n=int(input())
 m=int(input())
 for i in range(0,n):
@@ -110,8 +121,10 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+```
 
 # Z formation using continuous numbers
+```python
 n=int(input())
 m=int(input())
 count=0
@@ -123,3 +136,4 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+```

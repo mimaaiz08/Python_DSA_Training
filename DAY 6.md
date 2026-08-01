@@ -72,3 +72,38 @@ print(arr)
 
 # Selection Sort
 ```python
+def selection_sort(arr):
+    n=len(arr)
+    for i in range(n):
+        min_index=-1
+        for j in range(i+1, n):
+            if arr[j]<arr[min_index]:
+                min_index=j
+        arr[i], arr[min_index]=arr[min_index], arr[i]
+arr=[64, 25, 12, 22, 11]
+selection_sort(arr)
+print(arr)
+```
+[11, 12, 22, 25, 64]
+
+# Quick Sort
+```python
+def quick_sort(arr):
+    if len(arr)<=1:
+        return arr
+    pivot=arr[-1]
+    left=[]
+    right=[]
+    for x in arr[:-1]:
+        if x<=pivot:
+            left.append(x)
+        else:
+            right.append(x)
+    return quick_sort(left) + [pivot] + quick_sort(right)
+arr=[2,7,4,6,5,1]
+sorted_arr=quick_sort(arr)
+print(sorted_arr)
+```
+[1, 2, 4, 5, 6, 7]
+
+# 

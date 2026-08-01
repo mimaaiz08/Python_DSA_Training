@@ -1,12 +1,14 @@
-#pattern problem using * symbol
+# pattern problem using * symbol
 # nxm matrix
+''' python
 n = int(input())
 m = int(input())
 for i in range(0,n):
     for i in range(0,m):
         print("*",end=" ")
     print("\n")
-
+'''
+''' python
 # triangle 
 n = int(input())
 m = int(input())
@@ -15,6 +17,8 @@ for i in range(0,n):
         if i>=j:
             print("*",end=" ")
     print("\n")
+''' 
+''' python
 
 # triangle i<=j
 n = int(input())
@@ -26,6 +30,7 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
+'''
 
 # triangle with incrementing numbers 
 n = int(input())

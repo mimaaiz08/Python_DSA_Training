@@ -1,5 +1,5 @@
 # pattern problem using * symbol
-# nxm matrix
+## nxm matrix
 ```python
 n = int(input())
 m = int(input())

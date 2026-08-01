@@ -1,13 +1,13 @@
 # pattern problem using * symbol
 # nxm matrix
-'''python
+```python
 n = int(input())
 m = int(input())
 for i in range(0,n):
     for i in range(0,m):
         print("*",end=" ")
     print("\n")
-'''
+```
 ''' python
 # triangle 
 n = int(input())

@@ -8,8 +8,9 @@ for i in range(0,n):
         print("*",end=" ")
     print("\n")
 ```
-''' python
+
 # triangle 
+```python
 n = int(input())
 m = int(input())
 for i in range(0,n):
@@ -17,10 +18,10 @@ for i in range(0,n):
         if i>=j:
             print("*",end=" ")
     print("\n")
-''' 
-''' python
+``` 
 
 # triangle i<=j
+```python
 n = int(input())
 m = int(input())
 for i in range(0,n):
@@ -30,7 +31,7 @@ for i in range(0,n):
         else:
             print(" ",end=" ")
     print("\n")
-'''
+```
 
 # triangle with incrementing numbers 
 n = int(input())

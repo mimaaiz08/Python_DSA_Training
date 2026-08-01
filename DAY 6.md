@@ -68,6 +68,7 @@ arr = [4,2,3,6,5,1,7]
 insertion(arr)
 print(arr)
 ```
+[1, 2, 3, 4, 5, 6, 7]
 
 # Selection Sort
 ```python

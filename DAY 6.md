@@ -1,4 +1,4 @@
-# Searching Algorithm
+# Searching & Sort Algorithms
 # Linear Search
 ```python
 arr = [1,2,3,4,5,6,7]
@@ -38,3 +38,16 @@ else:
     print("Not Found")
 ```
 Index: 3
+
+# Bubble Sort
+```python
+arr = [4,2,3,6,5,1,7]
+n=len(arr)
+def bubble(arr):
+    for i in range(n):
+        for j in range(i+1, n):
+            if arr[i]>arr[j]:
+                arr[i],arr[j]=arr[j],arr[i]
+bubble(arr)
+print(arr)
+```

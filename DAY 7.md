@@ -48,17 +48,37 @@ class BST:
             return self.search(node.left, key)
         else:
             return self.search(node.right, key)
+
     def height(self, node):
         if node is None:
             return 0
-        left=self.height(node.left)
-        right=self.height(node.right)
-        return max(left, right)+1
+        left = self.height(node.left)
+        right = self.height(node.right)
+        return max(left, right) + 1
+
     def inordersucessor(self, node):
-        curr=node.right
-        while curr.left:
-            curr=curr.left
-        print(curr.data)
+        curr = node.right
+        while curr and curr.left:
+            curr = curr.left
+        return curr
+
+    def delete(self, node, key):
+        if node is None:
+            return None
+        if key < node.data:
+            node.left = self.delete(node.left, key)
+        elif key > node.data:
+            node.right = self.delete(node.right, key)
+        else:
+            if node.left is None:
+                return node.right
+            elif node.right is None:
+                return node.left
+
+            temp = self.inordersucessor(node)
+            node.data = temp.data
+            node.right = self.delete(node.right, temp.data)
+        return node
 
 bst = BST()
 root = None
@@ -70,6 +90,7 @@ root = bst.insert(root, 7)
 root = bst.insert(root, 10)
 root = bst.insert(root, 14)
 root = bst.insert(root, 4)
+
 print("Inorder Traversal:")
 bst.inorder(root)
 print("\n\nPreorder Traversal:")
@@ -80,20 +101,37 @@ print("\n\nSearch 6:")
 print(bst.search(root, 6))
 print("\n\nHeigth of Tree:")
 print(bst.height(root))
-print("\n\nInorder Sucessor :")
-bst.inordersucessor(root)
+
+print("\n\nInorder Sucessor of Root (8):")
+succ_node = bst.inordersucessor(root)
+print(succ_node.data if succ_node else "None")
+
+print("\nInorder Traversal after deleting 6:")
+root = bst.delete(root, 6)
+bst.inorder(root)
+print()
+
 ```
 Inorder Traversal:
-1 3 5 6 9 
+1 3 4 6 7 8 10 14 
 
 Preorder Traversal:
-5 1 3 6 9 
+8 3 1 6 4 7 10 14 
 
 Postorder Traversal:
-3 1 9 6 5 
+1 4 7 6 3 14 10 8 
 
 Search 6:
 True
 
-Inorder Successor of 6:
+Heigth of Tree:
+4
+
+
+Inorder Sucessor of Root (8):
 10
+
+Delete: 
+
+Inorder Traversal after deleting 6:
+1 3 4 7 8 10 14 

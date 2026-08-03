@@ -48,14 +48,22 @@ class BST:
             return self.search(node.left, key)
         else:
             return self.search(node.right, key)
-
+    def height(self, node):
+        if node is None:
+            return 0
+        left=self.height(node.left)
+        right=self.height(node.right)
+        return max(left, right)+1
 bst = BST()
 root = None
-root = bst.insert(root, 5)
-root = bst.insert(root, 6)
-root = bst.insert(root, 1)
+root = bst.insert(root, 8)
 root = bst.insert(root, 3)
-root = bst.insert(root, 9)
+root = bst.insert(root, 1)
+root = bst.insert(root, 6)
+root = bst.insert(root, 7)
+root = bst.insert(root, 10)
+root = bst.insert(root, 14)
+root = bst.insert(root, 4)
 print("Inorder Traversal:")
 bst.inorder(root)
 print("\n\nPreorder Traversal:")
@@ -64,5 +72,18 @@ print("\n\nPostorder Traversal:")
 bst.postorder(root)
 print("\n\nSearch 6:")
 print(bst.search(root, 6))
+print("\n\nHeigth of Tree:")
+print(bst.height(root))
 
 ```
+Inorder Traversal:
+1 3 5 6 9 
+
+Preorder Traversal:
+5 1 3 6 9 
+
+Postorder Traversal:
+3 1 9 6 5 
+
+Search 6:
+True

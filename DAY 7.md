@@ -54,6 +54,12 @@ class BST:
         left=self.height(node.left)
         right=self.height(node.right)
         return max(left, right)+1
+    def inordersucessor(self, node):
+        curr=node.right
+        while curr.left:
+            curr=curr.left
+        print(curr.data)
+
 bst = BST()
 root = None
 root = bst.insert(root, 8)
@@ -74,7 +80,8 @@ print("\n\nSearch 6:")
 print(bst.search(root, 6))
 print("\n\nHeigth of Tree:")
 print(bst.height(root))
-
+print("\n\nInorder Sucessor :")
+bst.inordersucessor(root)
 ```
 Inorder Traversal:
 1 3 5 6 9 
@@ -87,3 +94,6 @@ Postorder Traversal:
 
 Search 6:
 True
+
+Inorder Successor of 6:
+10

@@ -1,4 +1,4 @@
-## Trees & Graphs
+## Trees
 # BST 
 ```python
 class Node:

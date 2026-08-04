@@ -1,5 +1,5 @@
-## Graph
-# BFS uses queue and adjlist
+# Graph
+## BFS uses queue and adjlist
 ```python
 def dfs(graph, start, visited=None):
     if visited is None:
@@ -24,7 +24,7 @@ Enter the starting vertex: 1
 2
 4
 
-#DFS uses stack and adjlist
+## DFS uses stack and adjlist
 ```python
 import collections
 def bfs(graph, root):

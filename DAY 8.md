@@ -45,3 +45,4 @@ if __name__ =="__main__":
 Following is breadth first traversal: 
 0  1  2  3  
 
+Solved Lettcode problems 100, 102, 226
